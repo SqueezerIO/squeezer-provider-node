@@ -1,0 +1,60 @@
+{
+  "name": "squeezer-provider-node",
+  "version": "0.0.4",
+  "description": "NodeJS agnostic cloud provider interface",
+  "homepage": "https://squeezer.io/",
+  "bin": {},
+  "keywords": [
+    "squeezer.io",
+    "squeezer.io framework",
+    "squeezer framework",
+    "squeezer",
+    "squeezer provider",
+    "squeezer provider node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SqueezerIO/squeezer-provider-node"
+  },
+  "scripts": {
+    "eslint": "eslint . --cache",
+    "jsinspect": "jsinspect -t 50 ./",
+    "test": "jest"
+  },
+  "contributors": [
+    {
+      "name": "Nick Chisiu",
+      "email": "nick@squeezer.io",
+      "web": "https://Squeezer.IO/"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^2.1.0",
+    "assert": "^1.4.1",
+    "aws-sdk": "^2.139.0",
+    "colors": "^1.1.2",
+    "events": "^1.1.1",
+    "fd-slicer": "^1.0.1",
+    "findit2": "^2.2.3",
+    "fs-extra": "^4.0.2",
+    "graceful-fs": "^4.1.11",
+    "lodash": "^4.17.4",
+    "mime": "^2.0.3",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.19.1",
+    "pend": "^1.2.0",
+    "rimraf": "^2.6.2",
+    "streamsink": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.10.0",
+    "jest": "^21.2.1",
+    "jsinspect": "^0.12.7"
+  }
+}
