@@ -2,9 +2,9 @@
 
 const AWS = require('aws-sdk/global');
 const S3 = require('aws-sdk/clients/s3');
-const CloudFormation = require('aws-sdk/clients/CloudFormation');
-const Lambda = require('aws-sdk/clients/Lambda');
-const CloudWatchLogs = require('aws-sdk/clients/CloudWatchLogs');
+const CloudFormation = require('aws-sdk/clients/cloudformation');
+const Lambda = require('aws-sdk/clients/lambda');
+const CloudWatchLogs = require('aws-sdk/clients/cloudwatchlogs');
 
 const _ = require('lodash');
 
