@@ -245,7 +245,7 @@ Client.prototype.deleteObjects = function (s3Params) {
 Client.prototype.uploadFile = function (params) {
   const self                 = this;
   const uploader             = new EventEmitter();
-  const s3Params             = extend({}, params.s3Params);
+  let s3Params             = extend({}, params.s3Params);
   let fatalError             = false;
   const handleAbort          = () => {
     fatalError = true;

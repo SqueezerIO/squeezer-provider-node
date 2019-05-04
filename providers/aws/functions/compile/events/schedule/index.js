@@ -12,7 +12,7 @@ class scheduleEvent {
     this.serviceIdentifier = functionObject.serviceIdentifier;
     this.lambdaLogicalId   = this.props.utils.lambdaLogicalId(functionObject.identifier);    
     this.scheduleLogicalId = `${this.lambdaLogicalId}EventRule`;
-    this.scheduleValue     = functionObject.event.rate;
+    this.scheduleValue     = functionObject.event.cron;
 
     this.addRule();
     this.addPermissions();
@@ -24,7 +24,7 @@ class scheduleEvent {
     this.props.cloudFormation.stacks[this.serviceIdentifier].Resources[`${this.scheduleLogicalId}`] = {
       Type       : 'AWS::Events::Rule',
       Properties : {
-        ScheduleExpression : `rate(${this.scheduleValue})`,
+        ScheduleExpression : `cron(${this.scheduleValue})`,
         State              : 'ENABLED',
         Targets            : [
           {
