@@ -1,6 +1,6 @@
 {
   "name": "squeezer-provider-node",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "NodeJS agnostic cloud provider interface",
   "homepage": "https://squeezer.io/",
   "bin": {},
